@@ -29,13 +29,13 @@
 
         <nav id="mobile-navbar" class="snow-white-back">
             <div id="menu-icon" onclick="toggleMobileNav()">
-                <div id="disappear" class="bar dark-blue-back"></div>
+                <div class="bar dark-blue-back"></div>
                 <div class="bar dark-blue-back"></div>
                 <div class="dark-blue-back"></div>
-                <div id="menu-icon-opened" onclick="closeMenu()">
+                <!--<div id="menu-icon-opened" onclick="closeMenu()">
                     <div class="rotate-one bar dark-blue-back"></div>
                     <div class="rotate-two bar dark-blue-back"></div>
-                </div>
+                </div>-->
             </div>
 
             <ul id="menu-list">
@@ -101,28 +101,30 @@
         <div class="information-box">
             <div class="text left">
                 <img id="profile-photo" src="img/me-pic2.jpg" alt="picture of myself">
-                <ul class="description-desktop">
+                <ul class="description">
                     <li><span class="dark-blue">JAIME SEGURA</span></li>
                     <li><span class="warm-sand">Journalist &amp Web Developer</span></li>
                 </ul>
             </div>
 
             <div class="text right">
-                <ul class="description-mobile">
-                    <li><span class="dark-blue">JAIME SEGURA</span></li>
-                    <li><span class="warm-sand">Journalist &amp Web Developer</span></li>
-                </ul>
                 <p>
                     I spent the first 22 years of my life in my hometown: Madrid.
-                </p>
-                <p>
+                    <br><br>
                     When I finished my bachelor degree in Journalism I decided to move to Germany.
-                </p>
-                <p>
-                    Bremen and Berlin belong to my proffesional path.</p>
-                <p>
+                    <br><br>
+                    Bremen and Berlin belong to my proffesional path.
+                    <br><br>
                     After gaining some successful experiences in journalism and customer service, I committed myself to changing my career and become a web developer, a desire I had been following for a long time.
                 </p>
+                <p>
+                    <strong>Can you read my future?</strong>
+                </p>
+                
+                <p id="newText"></p>
+                <textarea id="textUser"></textarea>
+                <button id="rewriteStory">Continue writting my story</button>
+
             </div>
         </div>
     </section>
@@ -240,9 +242,13 @@
     </section>
 
     <script>
+        //OK button to close the Cookies message
+
         function closeCookies() {
             document.getElementById('cookies').style.display = 'none';
         }
+
+        //open and close the menu in the mobile version by clicking on the burger icon
 
         function toggleMobileNav() {
             var x = document.getElementById("menu-list");
@@ -251,16 +257,22 @@
             } else {
                 x.style.display = 'flex';
             }
-            
-            var x = document.getElementsById("disappear");
-            if (x.style.display === 'flex') {
-                x.style.display = 'none';
-            }
         }
+
+        //close menu in the mobile version by clicking on a section
 
         function hideMobileNav() {
             document.getElementById('menu-list').style.display = 'none';
         }
+        
+        //continue writting my history
+        
+        document.getElementById("rewriteStory").onclick = function() {
+            var x = document.getElementById("textUser").value;
+            
+            document.getElementById("newText").innerHTML = x;
+        }
+        
 
     </script>
 
