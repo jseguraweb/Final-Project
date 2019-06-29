@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jaime Segura, web developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Montserrat:400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="cookies" class="dark-blue-back">
+        <p class="snow-white">Mit der weiteren Nutzung unserer Webseite erklären Sie sich damit einverstanden, dass wir Cookies verwenden um Ihnen die Nutzerfreundlichkeit dieser Webseite zu verbessern. Weitere Informationen zum Datenschutz finden Sie in unserer Datenschutzerklärung.
+        </p>
+        <br>
+        <button id="ok-button" class="snow-white-back dark-blue" type="button" onclick="closeCookies()">OK</button>
+
+
+    </div>
+
+    <!-- LANDING PAGE -->
+
+    <div id="landing">
+
+        <!-- MOBILE NAVBAR -->
+
+        <nav id="mobile-navbar" class="snow-white-back">
+            <div id="menu-icon" onclick="toggleMobileNav()">
+                <div id="disappear" class="bar dark-blue-back"></div>
+                <div class="bar dark-blue-back"></div>
+                <div class="dark-blue-back"></div>
+                <div id="menu-icon-opened" onclick="closeMenu()">
+                    <div class="rotate-one bar dark-blue-back"></div>
+                    <div class="rotate-two bar dark-blue-back"></div>
+                </div>
+            </div>
+
+            <ul id="menu-list">
+                <li class="snow-white-back"><a href="#" class="home-button" onclick="hideMobileNav()">Home</a></li>
+
+                <li class="snow-white-back"><a href="#about" onclick="hideMobileNav()">About</a></li>
+
+                <li class="snow-white-back"><a href="#highlights" onclick="hideMobileNav()">Highlights</a></li>
+
+                <li class="snow-white-back"><a href="#testimonials" onclick="hideMobileNav()">Testimonials</a></li>
+
+                <li class="snow-white-back"><a href="#contact" onclick="hideMobileNav()">Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Landing Page Background -->
+
+        <main class="title">
+            <div class="container">
+                <div class="name">
+                    <h1 class="dark-blue">Jaime Segura</h1>
+                    <h2 class="warm-sand">web developer</h2>
+                </div>
+                <img class="logo" src="img/myAvatar-blue.png" alt="">
+            </div>
+        </main>
+
+    </div>
+
+    <!-- DESKTOP NAVBAR -->
+
+    <nav id="desktop-navbar" class="snow-white-back">
+        <ul class="main-nav">
+            <li>
+                <a class="home-button" href="#">HOME</a>
+            </li>
+            <li>
+                <a href="#about">ABOUT</a>
+            </li>
+            <li>
+                <a href="#highlights">HIGHLIGHTS</a>
+            </li>
+            <li>
+                <a href="#testimonials">TESTIMONIALS</a>
+            </li>
+            <li>
+                <a href="#contact">CONTACT</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!-- ABOUT PAGE -->
+
+    <section id="about" class="snow-white-back">
+
+        <div class="space-between"></div>
+
+        <h3 class="snow-white header dark-blue">"I used to write stories, now I write code"</h3>
+
+        <div class="information-box">
+            <div class="text left">
+                <img id="profile-photo" src="img/me-pic2.jpg" alt="picture of myself">
+                <ul class="description-desktop">
+                    <li><span class="dark-blue">JAIME SEGURA</span></li>
+                    <li><span class="warm-sand">Journalist &amp Web Developer</span></li>
+                </ul>
+            </div>
+
+            <div class="text right">
+                <ul class="description-mobile">
+                    <li><span class="dark-blue">JAIME SEGURA</span></li>
+                    <li><span class="warm-sand">Journalist &amp Web Developer</span></li>
+                </ul>
+                <p>
+                    I spent the first 22 years of my life in my hometown: Madrid.
+                </p>
+                <p>
+                    When I finished my bachelor degree in Journalism I decided to move to Germany.
+                </p>
+                <p>
+                    Bremen and Berlin belong to my proffesional path.</p>
+                <p>
+                    After gaining some successful experiences in journalism and customer service, I committed myself to changing my career and become a web developer, a desire I had been following for a long time.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS PAGE -->
+
+    <section id="highlights" class="warm-sand-back">
+
+        <div class="space-between"></div>
+
+        <h3 class="snow-white header">how <span class="dark-blue">code</span> I help you?</h3>
+
+        <article class="wrapper">
+
+            <p class="snow-white">
+                After completing my academic education as Front-End developer in the DCI Academy and having taken part of different big and small projects from national and international companies, I am able to code in the following programming languages:
+            </p>
+
+            <ul class="skills">
+                <li><img class="icon" src="img/html5-icon.png" alt="html5 icon">HTML5</li>
+                <li><img class="icon" src="img/css3-icon.png" alt="css3 icon">CSS3</li>
+                <li><img class="icon-construction icon" src="img/js-icon.png" alt="javascript icon">Javascript</li>
+            </ul>
+            <ul class="skills">
+                <li><img class="icon-construction icon" src="img/react-icon.png" alt="">React</li>
+                <li><img class="icon-construction icon" src="img/php-icon.png" alt="">PHP</li>
+                <li><img class="icon-construction icon" src="img/mongodb-icon.png" alt="">MongoDB</li>
+            </ul>
+
+        </article>
+
+
+    </section>
+
+    <!-- TESTIMONIALS PAGE -->
+
+    <section id="testimonials" class="white-coco-back">
+
+        <div class="space-between"></div>
+
+        <h3 class="dark-blue header">Clients talk</h3>
+
+        <section class="opinions">
+            <article>
+                <div class="speech-bubble dark-blue-back">
+                    <p class="snow-white">"I had a really good experience working together with Jaime. I would emphasize his <strong>motivation</strong> and capacity to <strong> find solutions</strong> to every trouble we have been facing in this project. I wouldn't hesitate on contacting him again."</p>
+                </div>
+                <div class="pic-client"><img src="img/john-smith.jpg" alt=""></div>
+                <h4>John Smith</h4>
+                <h5><em>smithsolutions.com</em></h5>
+            </article>
+            <article>
+                <div class="speech-bubble dark-blue-back">
+                    <p class="snow-white">"<strong>His engagement is contagious</strong>. He listen to his clients. I was just amazed at the results. The new design of our website is <strong>user-friendly</strong> and <strong>responsive</strong>. We are looking forward to the next collaboration!"</p>
+                </div>
+                <div class="pic-client"><img class="pic-testimonial" src="img/mary-major.jpg" alt=""></div>
+                <h4>Mary Major</h4>
+                <h5><em>major-agency.com</em></h5>
+            </article>
+            <article>
+                <div class="speech-bubble dark-blue-back">
+                    <p class="snow-white">"I hired his services following a friend's recommendation and I can just confirm that Jaime is a great professional in web development. <strong>Very precise estimates, punctual deadline and very kind communication</strong>."</p>
+                </div>
+                <div class="pic-client"><img class="pic-testimonial" src="img/max-mustermann.jpg" alt=""></div>
+                <h4>Max Mustermann</h4>
+                <h5><em>musterprodukte.de</em></h5>
+            </article>
+        </section>
+
+
+    </section>
+
+    <!-- CONTACT PAGE -->
+
+    <section id="contact" class="dark-blue-back">
+
+        <div class="space-between"></div>
+
+
+        <h3 class="snow-white header dark-blue">Get in touch</h3>
+
+        <div class="wrapper form">
+            <p class="text-form dark-blue">If you like what you have seen so far or you want to know more about me and my work, do not hesitate on contacting me.
+                <br><br>
+                <strong>My door is always open to new projects, collaborations and challenges</strong>.
+                <br><br>
+                Don't be shy and knock it.</p>
+            <form class="contact-form" action="contact">
+                <p><input type="text" name="name" placeholder="Name"></p>
+                <p><input type="text" name="subject" placeholder="Subject"></p>
+                <p><input type="text" name="email" placeholder="Email"></p>
+                <p><textarea name="message" placeholder="Write your message here" rows="10" cols="30"></textarea></p>
+                <p><input type="submit" class="submit dark-blue-back snow-white icon" value="send"></p>
+            </form>
+
+        </div>
+        <footer>
+            <div class="social-icons">
+                <a class="icon" href="https://www.linkedin.com/in/jaime-segura-%C3%A1lvarez-6b985360/" target="_blank"><img src="img/linkedin-icon.png" alt=""></a>
+                <a class="icon" href="https://www.xing.com/profile/Jaime_SeguraAlvarez" target="_blank"><img src="img/xing-icon.png" alt=""></a>
+                <a class="icon" href="https://github.com/jseguraweb" target="_blank"><img src="img/github-icon.png" alt=""></a>
+            </div>
+            <div class="impressum">
+                <h6><a href="legal-information.html#impressum-link" target="_blank">Impressum</a></h6>
+                <span>&vert;</span>
+                <h6><a href="legal-information.html#datenschutz-link" target="_blank">Datenschutzerklärung</a></h6>
+            </div>
+            <div>
+                <p class="copyright white-coco">Made by &copy;Jaime Segura &#128274 All Rights Reserved</p>
+            </div>
+
+        </footer>
+
+
+    </section>
+
+    <script>
+        function closeCookies() {
+            document.getElementById('cookies').style.display = 'none';
+        }
+
+        function toggleMobileNav() {
+            var x = document.getElementById("menu-list");
+            if (x.style.display === 'flex') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'flex';
+            }
+            
+            var x = document.getElementsById("disappear");
+            if (x.style.display === 'flex') {
+                x.style.display = 'none';
+            }
+        }
+
+        function hideMobileNav() {
+            document.getElementById('menu-list').style.display = 'none';
+        }
+
+    </script>
+
+</body>
+
+</html>
