@@ -117,13 +117,6 @@
                     <br><br>
                     After gaining some successful experiences in journalism and customer service, I committed myself to changing my career and become a web developer, a desire I had been following for a long time.
                 </p>
-                <p>
-                    <strong>Can you read my future?</strong>
-                </p>
-                
-                <p id="newText"></p>
-                <textarea id="textUser"></textarea>
-                <button id="rewriteStory">Continue writting my story</button>
 
             </div>
         </div>
@@ -212,7 +205,7 @@
                 <strong>My door is always open to new projects, collaborations and challenges</strong>.
                 <br><br>
                 Don't be shy and knock it.</p>
-            <form class="contact-form" action="contact">
+            <form class="contact-form" action="message-delivered.html#" target="_blank">
                 <p><input type="text" name="name" placeholder="Name"></p>
                 <p><input type="text" name="subject" placeholder="Subject"></p>
                 <p><input type="text" name="email" placeholder="Email"></p>
@@ -264,15 +257,8 @@
         function hideMobileNav() {
             document.getElementById('menu-list').style.display = 'none';
         }
-        
-        //continue writting my history
-        
-        document.getElementById("rewriteStory").onclick = function() {
-            var x = document.getElementById("textUser").value;
-            
-            document.getElementById("newText").innerHTML = x;
-        }
-        
+    
+ 
 
     </script>
 

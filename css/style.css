@@ -349,7 +349,7 @@ SECOND PAGE - ABOUT
         margin: 1em auto;
     }
 
-    #rewriteStory {
+    #rewriteStory-button {
         width: 100%;
         padding: 10px;
         display: block;
@@ -362,7 +362,7 @@ SECOND PAGE - ABOUT
         opacity: 0.8;
     }
     
-    #rewriteStory:hover {
+    #rewriteStory-button:hover {
         opacity: 1;
         cursor: pointer;
     }
@@ -798,24 +798,15 @@ SECOND PAGE - ABOUT
     }
 
     .text {
-        padding-right: 2em;
-    }
-
-    .left {
-        margin-top: 1.2em;
-        width: 30%;
-    }
-
-    .right {
-        width: 60%;
+        width: 45%;
     }
 
     #profile-photo {
-        width: 25vw;
+        width: 300px;
         height: auto;
         box-shadow: 1px 1px 5px grey;
         display: block;
-        margin: 0 auto;
+        margin: 0.5em auto;
     }
 
     .description {
@@ -825,7 +816,7 @@ SECOND PAGE - ABOUT
         font-family: 'Montserrat', sans-serif;
         text-align: center;
         color: #000;
-        margin: 1.5em 0em;
+        margin: 0.5em 0em;
     }
 
     .text p {
@@ -835,26 +826,6 @@ SECOND PAGE - ABOUT
         line-height: 1.5em;
         font-family: 'Montserrat', sans-serif;
         margin: 1em auto;
-    }
-
-    #textUser {
-        height: 7em;    
-    }
-    
-    #rewriteStory {
-        width: 100%;
-        padding: 10px;
-        display: block;
-        margin: 1em auto;
-        font-family: 'Montserrat', sans-serif;
-        color: #fff;
-        background-color: #2E4A62;
-        opacity: 0.8;
-    }
-    
-    #rewriteStory:hover {
-        opacity: 1;
-        cursor: pointer;
     }
 
 
